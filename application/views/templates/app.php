@@ -6,18 +6,18 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Home</title>
+    <title><?= $title ?></title>
 
     <link rel="canonical" href="navbar-fixed.htm">
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="<?= base_url() ?>assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/libs/fontawesome/css/all.min.css">
 
     <!-- my css -->
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/app.css">
   </head>
   <body>
 
@@ -37,7 +37,7 @@
             Manage
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdown-1">
-            <a class="dropdown-item" href="#">Kategori</a>
+            <a class="dropdown-item" href="<?= base_url('category') ?>">Kategori</a>
             <a class="dropdown-item" href="#">Produk</a>
             <a class="dropdown-item" href="#">Order</a>
         </div>
@@ -75,7 +75,8 @@
 <?php $this->load->view($pages); ?> 
 <!-- end content -->
 
-<script src="assets/libs/jquery/jquery-3.4.1.min.js" ></script>
-<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url() ?>assets/libs/jquery/jquery-3.4.1.min.js" ></script>
+<script src="<?= base_url() ?>assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url() ?>assets/js/app.js"></script>
 </body>
 </html>
