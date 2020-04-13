@@ -179,7 +179,9 @@ class MY_Model extends CI_Model {
 	public function paginate($page)
 	{
 		$this->db->limit(
+			// banyak data yang ditampilkan
 			$this->perPage,
+			// data yang dilewat
 			$this->calculateRealOffset($page)
 		);
 
