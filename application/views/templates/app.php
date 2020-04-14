@@ -39,6 +39,7 @@
         <div class="dropdown-menu" aria-labelledby="dropdown-1">
             <a class="dropdown-item" href="<?= base_url('category') ?>">Kategori</a>
             <a class="dropdown-item" href="<?= base_url('product') ?>">Produk</a>
+            <a class="dropdown-item" href="<?= base_url('user') ?>">Pengguna</a>
             <a class="dropdown-item" href="#">Order</a>
         </div>
         </li>
