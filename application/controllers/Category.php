@@ -7,12 +7,14 @@ class Category extends MY_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-	
+		$role = $this->session->userdata('role');
+		if ($role != 'admin') {
+			redirect(base_url('/'));
+			return;
+		}
 	}
 
 	
-	
-
 	public function index($page = null)
 	{
 		$data['title']		= 'Admin: Category';
