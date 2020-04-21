@@ -40,7 +40,7 @@
             <a class="dropdown-item" href="<?= base_url('category') ?>">Kategori</a>
             <a class="dropdown-item" href="<?= base_url('product') ?>">Produk</a>
             <a class="dropdown-item" href="<?= base_url('user') ?>">Pengguna</a>
-            <a class="dropdown-item" href="#">Order</a>
+            <a class="dropdown-item" href="<?= base_url('myorder') ?>">Order</a>
         </div>
         </li>
     </ul>
@@ -62,7 +62,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdown-2">
             <a class="dropdown-item" href="<?= base_url('profile') ?>">Profile</a>
-            <a class="dropdown-item" href="#">Orders</a>
+            <a class="dropdown-item" href="<?= base_url('myorder') ?>">Orders</a>
             <a class="dropdown-item" href="<?= base_url('logout') ?>">Logout</a>
         </div>
         </li>
